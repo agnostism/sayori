@@ -12,13 +12,13 @@ Lilly is a minimal library for composing [pure functions](https://en.wikipedia.o
 
 ## Composables
 
-Lilly exports a decorator called `Composable`. Any two composable functions can be combined using the `|` operator. For example,
+Lilly exports a function decorator called `Composable`. Any two composable functions can be composed using the `|` operator. For example,
 
 ```py
 from lilly import Composable
 ```
 
-Create two composables...
+Create two composable functions...
 
 ```py
 f = Composable(lambda x: x + 1)
