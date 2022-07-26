@@ -1,6 +1,6 @@
 <div align=center>
   <br>
-  <img width=50% src='./images/lilly.svg'></img>
+  <img width=55% src='./images/lilly.svg'></img>
   <br>
 </div>
 
