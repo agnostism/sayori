@@ -4,13 +4,11 @@
   <br>
 </div>
 
+
 # Lilly
 
-Lilly is a minimal library for composing [pure functions](https://en.wikipedia.org/wiki/Pure_function) using pipe notation. 
+Lilly is a minimal library for composing [pure functions](https://en.wikipedia.org/wiki/Pure_function) using pipe notation. If `f` and `g` are functions then `f | g` is a function such that `(f | g)(x) = g(f(x))`. 
 
-```
-If f and g are functions then (f | g) is a function such that (f | g)(x) = g(f(x)). 
-```
 
 ## Composables
 
