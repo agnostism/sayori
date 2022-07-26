@@ -1,7 +1,7 @@
 from typing import Any, Callable
 
 
-class Composable:
+class App:
     """
     Implements composable functions.
     """
@@ -22,12 +22,15 @@ class Composable:
         return self.callable(x)
 
     
-    def __or__(self, other: Composable) -> Composable:
+    def __or__(self, other: App) -> App:
         """
         Implements the composition/pipe operator, and 
         returns a new composable.
         """
 
-        return Composable(
+        return App(
             lambda x: other.callable(self.callable(x))
         )
+
+
+Composable = App
