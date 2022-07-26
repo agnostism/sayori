@@ -6,7 +6,7 @@
   <br>
 </div>
 
-# lamb: Lambda calculus with pipe notation
+# lamb: Functions composition inspired by lambda calculus
 
 Lamb is a simple library for creating [pure](https://en.wikipedia.org/wiki/Pure_function), composable functions using a shell-like pipe notation. It implements the two primary operations in [lambda calculus](https://en.wikipedia.org/wiki/Lambda_calculus), namely abstraction and application.
 
