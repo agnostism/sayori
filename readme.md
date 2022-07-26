@@ -8,7 +8,11 @@
 
 Lilly is a minimal library for composing [pure functions](https://en.wikipedia.org/wiki/Pure_function) using pipe notation. 
 
-> If `f` and `g` are functions, then `h = f | g` is a function such that `h(x) = g(f(x))`. 
+<div align=center>
+  <br>
+  <img width=50% src='./images/pipe-notation.PNG'></img>
+  <br>
+</div>
 
 
 ## Usage
