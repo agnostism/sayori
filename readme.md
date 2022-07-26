@@ -1,6 +1,8 @@
 <div align=center>
   <br>
+  <br>
   <img width=40% src='./images/lamb.svg'></img>
+  <br>
   <br>
 </div>
 
