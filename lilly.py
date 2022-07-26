@@ -6,7 +6,6 @@ class Composable:
     Implements composable functions.
     """
     
-    
     def __init__(self, callable: Callable):
         """
         Creates a composable from a given callable.
