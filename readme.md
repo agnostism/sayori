@@ -1,5 +1,5 @@
 <div align=center>
-  <img width=50% src='./images/lamb.svg'></img>
+  <img width=45% src='./images/lamb.svg'></img>
 </div>
 
 # lamb: Lambda calculus with pipe notation
