@@ -2,14 +2,12 @@ from typing import Any, Callable
 
 
 class Composable:
-    
     """
     Implements composable functions.
     """
     
     
     def __init__(self, callable: Callable):
-        
         """
         Creates a composable from a given callable.
         """
@@ -17,8 +15,7 @@ class Composable:
         self.callable = callable
 
     
-    def __call__(self, x: Any) -> Any:
-        
+    def __call__(self, x: Any) -> Any:  
         """
         Calls the composable (i.e. the internal callable).
         """
@@ -27,10 +24,9 @@ class Composable:
 
     
     def __or__(self, other: Composable) -> Composable:
-        
         """
-        Implements the composition/pipe operator, and returns
-        a new composable.
+        Implements the composition/pipe operator, and 
+        returns a new composable.
         """
 
         return Composable(
