@@ -4,29 +4,42 @@
   <br>
 </div>
 
-# lamb: Lambda calculus and pure function composition
+# Lilly
 
-Lamb is a simple library for creating [pure](https://en.wikipedia.org/wiki/Pure_function), composable functions. It implements the two primary operations in [lambda calculus](https://en.wikipedia.org/wiki/Lambda_calculus), namely abstraction and application.
+Lilly is a minimal library for composing [pure functions](https://en.wikipedia.org/wiki/Pure_function) using pipe notation. If `f(x)` and `g(x)` are functions, then `(f | g)(x) = g(f(x))`.
 
-Lamb exports a decorator called `lamb` which implements the abstraction operation. Any two `lamb`-decorated functions can be composed using the `|` operator.
 
-Lamb exports a decorator `lamb` which adds abstraction to a given function. Any two functions decorated by `lamb` can then be composed using the pipe operator. For example: 
+## Usage
+
+Lilly exports a decorator called `Composable` which allows a function to support piping. Any two composable functions can be combined using the `|` operator. For example,
 
 ```py
-from lamb import lamb
+from lilly import Composable
 ```
 
-Create two functions `f` and `g`
+Create two composables...
 
-f = lamb(lambda x: x ** 2)
+```py
+f = Composable(lambda x: x + 1)
 
-g = lamb(lambda x: x + 2)
+g = Composable(lambda x: x * 2)
 ```
 
-Compose them (abstraction):
+Compose them...
 
-```
+```py
 h = f | g 
 ```
 
+Apply the composite...
 
+```py
+h(2)  # returns 6 
+```
+
+
+## API
+
+* `Composable(callable: Callable)` - creates a composable from a callable. 
+
+* `(left: Composable) | (right: Composable)` - combines two composables, such that `(f | g)(x) = g(f(x))`.
