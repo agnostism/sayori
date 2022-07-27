@@ -1,6 +1,6 @@
 <div align=center>
   <br>
-  <img width=60% src='https://raw.githubusercontent.com/oruwmztbnz4q/sayori/main/images/sayori.svg></img>
+  <img width=60% src='https://raw.githubusercontent.com/oruwmztbnz4q/sayori/main/images/sayori.svg'></img>
   <br>
 </div>
 
